@@ -2,34 +2,42 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>The Puppetmaster Page</title>
+    <title>Landing Page</title>
 
     <!-- Bulma CSS -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <style>
-        .landing-box {
-            border: 1px solid #ccc;
-            padding: 1.5rem;
+        /* Abstand zwischen den Boxen */
+        .box-wrapper {
             margin-bottom: 3rem;
         }
 
+        /* Rahmen der Box */
+        .landing-box {
+            border: 1px solid #ccc;
+            padding: 1.5rem;
+        }
+
+        /* Vertikale Trennlinie */
         .divider {
             border-left: 1px solid #ccc;
             margin: 0 1.5rem;
         }
 
+        /* Download-Grafik */
         .download-image {
             margin-top: 1rem;
             display: inline-block;
         }
 
-    .section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    }
-        
+        /* Mobile: Trennlinie ausblenden */
+        @media (max-width: 768px) {
+            .divider {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -38,56 +46,82 @@
     <div class="container">
 
         <!-- BOX 1 -->
-        <div class="columns is-vcentered landing-box">
+        <div class="box-wrapper">
+            <div class="columns is-vcentered landing-box">
 
-            <!-- Bild -->
-            <div class="column is-narrow">
-                <figure class="image is-256x256">
-                    <img src="bild1.png" alt="Bild 1">
-                </figure>
+                <div class="column is-narrow">
+                    <figure class="image is-256x256">
+                        <img src="bild1.png" alt="Bild 1">
+                    </figure>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="column">
+                    <h2 class="title is-4">Titel 1</h2>
+                    <p class="content">
+                        Beschreibung für den ersten Bereich.
+                    </p>
+
+                    <a href="download1.html" class="download-image">
+                        <img src="download.png" alt="Download" width="256" height="64">
+                    </a>
+                </div>
+
             </div>
-
-            <div class="divider"></div>
-
-            <!-- Text + Download -->
-            <div class="column">
-                <h2 class="title is-4">Titel 1</h2>
-                <p class="content">
-                    Kurze Beschreibung für das erste Produkt oder Feature.
-                </p>
-
-                <a href="download1.html" class="download-image">
-                    <img src="download.png" alt="Download" width="256" height="64">
-                </a>
-            </div>
-
         </div>
 
         <!-- BOX 2 -->
-        <div class="columns is-vcentered landing-box">
+        <div class="box-wrapper">
+            <div class="columns is-vcentered landing-box">
 
-            <div class="column is-narrow">
-                <figure class="image is-256x256">
-                    <img src="bild2.png" alt="Bild 2">
-                </figure>
+                <div class="column is-narrow">
+                    <figure class="image is-256x256">
+                        <img src="bild2.png" alt="Bild 2">
+                    </figure>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="column">
+                    <h2 class="title is-4">Titel 2</h2>
+                    <p class="content">
+                        Beschreibung für den zweiten Bereich.
+                    </p>
+
+                    <a href="download2.html" class="download-image">
+                        <img src="download.png" alt="Download" width="256" height="64">
+                    </a>
+                </div>
+
             </div>
-
-            <div class="divider"></div>
-
-            <div class="column">
-                <h2 class="title is-4">Titel 2</h2>
-                <p class="content">
-                    Beschreibung für den zweiten Bereich.
-                </p>
-
-                <a href="download2.html" class="download-image">
-                    <img src="download.png" alt="Download" width="256" height="64">
-                </a>
-            </div>
-
         </div>
 
-        <!-- Weitere Boxen einfach kopieren -->
+        <!-- BOX 3 -->
+        <div class="box-wrapper">
+            <div class="columns is-vcentered landing-box">
+
+                <div class="column is-narrow">
+                    <figure class="image is-256x256">
+                        <img src="bild3.png" alt="Bild 3">
+                    </figure>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="column">
+                    <h2 class="title is-4">Titel 3</h2>
+                    <p class="content">
+                        Beschreibung für den dritten Bereich.
+                    </p>
+
+                    <a href="download3.html" class="download-image">
+                        <img src="download.png" alt="Download" width="256" height="64">
+                    </a>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 </section>
