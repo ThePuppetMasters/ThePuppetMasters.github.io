@@ -9,6 +9,11 @@
           href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <style>
+        /* Navbar optisch leicht absetzen */
+        .navbar {
+            border-bottom: 1px solid #ccc;
+        }
+
         /* Abstand zwischen den Boxen */
         .box-wrapper {
             margin-bottom: 3rem;
@@ -32,7 +37,7 @@
             display: inline-block;
         }
 
-        /* Mobile: Trennlinie ausblenden */
+        /* Mobile */
         @media (max-width: 768px) {
             .divider {
                 display: none;
@@ -42,6 +47,54 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <div class="container">
+
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <strong>LOGO</strong>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+
+                <a class="navbar-item" href="#">Home</a>
+
+                <!-- Dropdown -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Downloads
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Produkt 1</a>
+                        <a class="navbar-item" href="#">Produkt 2</a>
+                        <a class="navbar-item" href="#">Produkt 3</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#">Alle Downloads</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Info
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Über uns</a>
+                        <a class="navbar-item" href="#">Kontakt</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<!-- CONTENT -->
 <section class="section">
     <div class="container">
 
@@ -63,7 +116,7 @@
                         Beschreibung für den ersten Bereich.
                     </p>
 
-                    <a href="download1.html" class="download-image">
+                    <a href="#" class="download-image">
                         <img src="download.png" alt="Download" width="256" height="64">
                     </a>
                 </div>
@@ -89,33 +142,7 @@
                         Beschreibung für den zweiten Bereich.
                     </p>
 
-                    <a href="download2.html" class="download-image">
-                        <img src="download.png" alt="Download" width="256" height="64">
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- BOX 3 -->
-        <div class="box-wrapper">
-            <div class="columns is-vcentered landing-box">
-
-                <div class="column is-narrow">
-                    <figure class="image is-256x256">
-                        <img src="bild3.png" alt="Bild 3">
-                    </figure>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="column">
-                    <h2 class="title is-4">Titel 3</h2>
-                    <p class="content">
-                        Beschreibung für den dritten Bereich.
-                    </p>
-
-                    <a href="download3.html" class="download-image">
+                    <a href="#" class="download-image">
                         <img src="download.png" alt="Download" width="256" height="64">
                     </a>
                 </div>
