@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+
+    <!-- Bulma CSS (ggf. durch deine burma.css ersetzen) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+        .landing-box {
+            border: 1px solid #ccc;
+            padding: 2rem;
+        }
+
+        .divider {
+            border-left: 1px solid #ccc;
+            margin: 0 1.5rem;
+        }
+
+        .link-image {
+            margin-top: 1rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-vcentered is-centered landing-box">
+
+            <!-- Bild -->
+            <div class="column is-narrow">
+                <figure class="image is-512x512">
+                    <img src="bild.png" alt="Bild">
+                </figure>
+            </div>
+
+            <!-- Trennlinie -->
+            <div class="divider"></div>
+
+            <!-- Text + Link -->
+            <div class="column">
+                <h1 class="title">Landing Page Titel</h1>
+                <p class="content">
+                    Hier steht dein Text.  
+                    Kurz, prägnant und erklärend, was der Besucher tun soll.
+                </p>
+
+                <a href="https://example.com" class="link-image">
+                    <img src="link-grafik.png" alt="Link" width="200">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
