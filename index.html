@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Landing Page</title>
 
-    <!-- Bulma CSS (ggf. durch deine burma.css ersetzen) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <style>
         .landing-box {
             border: 1px solid #ccc;
-            padding: 2rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .divider {
@@ -18,7 +20,7 @@
             margin: 0 1.5rem;
         }
 
-        .link-image {
+        .download-image {
             margin-top: 1rem;
             display: inline-block;
         }
@@ -28,32 +30,59 @@
 
 <section class="section">
     <div class="container">
-        <div class="columns is-vcentered is-centered landing-box">
+
+        <!-- BOX 1 -->
+        <div class="columns is-vcentered landing-box">
 
             <!-- Bild -->
             <div class="column is-narrow">
-                <figure class="image is-512x512">
-                    <img src="bild.png" alt="Bild">
+                <figure class="image is-256x256">
+                    <img src="bild1.png" alt="Bild 1">
                 </figure>
             </div>
 
-            <!-- Trennlinie -->
             <div class="divider"></div>
 
-            <!-- Text + Link -->
+            <!-- Text + Download -->
             <div class="column">
-                <h1 class="title">Landing Page Titel</h1>
+                <h2 class="title is-4">Titel 1</h2>
                 <p class="content">
-                    Hier steht dein Text.  
-                    Kurz, prägnant und erklärend, was der Besucher tun soll.
+                    Kurze Beschreibung für das erste Produkt oder Feature.
                 </p>
 
-                <a href="https://example.com" class="link-image">
-                    <img src="link-grafik.png" alt="Link" width="200">
+                <a href="download1.html" class="download-image">
+                    <img src="download.png" alt="Download" width="256" height="64">
                 </a>
             </div>
 
         </div>
+
+        <!-- BOX 2 -->
+        <div class="columns is-vcentered landing-box">
+
+            <div class="column is-narrow">
+                <figure class="image is-256x256">
+                    <img src="bild2.png" alt="Bild 2">
+                </figure>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="column">
+                <h2 class="title is-4">Titel 2</h2>
+                <p class="content">
+                    Beschreibung für den zweiten Bereich.
+                </p>
+
+                <a href="download2.html" class="download-image">
+                    <img src="download.png" alt="Download" width="256" height="64">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Weitere Boxen einfach kopieren -->
+
     </div>
 </section>
 
